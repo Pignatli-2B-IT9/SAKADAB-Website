@@ -1,0 +1,179 @@
+<html>
+<head>
+<title> Mapeh - Barracoso </title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link href="mainstyle.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+.features-imag{
+background-color:#FFFFFF;
+			opacity:.8;
+			width:60%; 
+			border: 10px outset #008B8B;
+			margin-left:260px;
+			}
+/*--footer--*/
+#footer{
+padding: 100px 0 20px;
+background: url(footer.jpg);
+background-size:cover;
+position:relative;
+}
+.footer-row{
+width:80%;
+margin:0 auto;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+.footer-left,.footer-right{
+flex-basis:45%;
+padding:10px;
+margin-bottom:20px;
+}
+.footer-right{
+text-align:right;
+}
+.footer-right img{
+float:right;
+}
+.footer-left img{
+float:left;
+}
+.footer-row h1{
+margin:10px 0;
+color:#fff;
+}
+.footer-row p{
+line-height:35px;
+color:#fff;
+}
+.footer-left .fa,.footer-right .fa{
+font-size:15px;
+color:#ADD8E6;
+margin:5px;
+}
+.footer-img{
+max-width:400px;
+opacity:0.3;
+position:absolute;
+left:50%;
+top:35%;
+transform:translate(-50%,-50%)
+}
+.title-text2{
+text-align:center;
+padding-bottom:70px;
+}
+.title-text2 p{
+margin:auto;
+font-size:20px;
+color:#ADD8E6;
+font-weight:bold;
+position:relative;
+z-index:1;
+display:inline-block;
+font-family: 'Courgette', cursive;
+}
+.title-text2 h1{
+font-size: 35px;
+font-family: 'Cinzel', serif;
+}
+</style>
+</head>
+<body>
+<section id="banner">
+<img src="gay.png" class="logo">
+<div class="banner-text">
+<h1>Mapeh</h1>
+<p>9-Pignatelli_2B</p>
+<br>
+<div class="banner-btn">
+<a href="https://web.facebook.com/sakadab.samahan"><span></span>SAKADAB FB</a>
+<a href="https://www.google.com/maps/place/GK+SAKADAB+Village/@7.1417754,125.4812836,15z/data=!4m5!3m4!1s0x0:0x3490a43b22cc50c7!8m2!3d7.1417019!4d125.4812915"><span></span>Direction</a>
+</div>
+</div>
+</section>
+<div id="sideNav">
+<nav>
+<ul>
+<br>
+<li><a href="index.html">Home</a></li>
+<li><a href="sip.html">SIP</a></li>
+<li><a href="project.html">Project</a></li>
+<li><a href="mapeh.html">Mapeh</a></li>
+<li><a href="https://www.epa.gov/recycle/composting-home">Resources#1</a></li>
+<li><a href="https://www.bhg.com/gardening/yard/compost/how-to-compost/">Resources#2</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6201933/">Resources#3</a></li>
+</ul>
+</nav>
+</div>
+<div id="menuBtn">
+<img src="menu2.png" id="menu">
+</div>
+<!--Features-->
+
+<section id="feature">
+<div class="title-text">
+<p>Mapeh PT</p>
+<h1>Usage of DECIDE format</h1>
+</div>
+</div>
+<div class="features-imag">
+<img src="health.png" width=810px>
+</div>
+</div>
+</section>
+<!--footer-->
+<section id="footer">
+<img src="addu.png" class="footer-img">
+<div class="title-text2">
+<p>Contributors in the Making of the Task:</p>
+<h1 style="color:#fff;">Robb Benjamin Barracoso & Hainie M. Mustapha</h1>
+</div>
+<div class="footer-row">
+<div class="footer-left">
+<img src="16.png" width="50px">
+<h1>Robb Barracoso</h1>
+<p>Web Designer</p>
+<p><i class="fa fa-envelope" aria-hidden="true"></i>rbrbarracoso@addu.edu.ph</p>
+<p><i class="fa fa-facebook-square" aria-hidden="true"></i>Robb Barracoso</p>
+<p>Robb Barracoso is a very quiet and reserve person but he does his tasks willingly and very quickly. He likes to read and listen to music during his free time.
+</p>
+</div>
+<div class="footer-right">
+<img src="15.png" width="50px">
+<h1>Hainie Mustapha</h1>
+<p>Asst. Web Designer</p>
+<p>hmmustapha@addu.edu.ph<i class="fa fa-envelope" aria-hidden="true"></i></p>
+<p>Hainie Mustapha<i class="fa fa-facebook-square" aria-hidden="true"></i></p>
+<p>Hainie Mustapha is the assistant leader. She is a hardworking and smart individual 
+who is decent at coding. She is diligent and works 24/7 for her group’s projects. She 
+loves sleeping yet never seems to get enough sleep.</p>
+</div>
+</div>
+</section>
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+if(sideNav.style.right == "-250px"){
+sideNav.style.right = "0";
+menu.src = "ekis.png";
+}
+else{
+sideNav.style.right = "-250px";
+menu.src = "menu2.png";
+}
+}
+</script>
+</body>
+</html>
